@@ -1,0 +1,14 @@
+<ons-toolbar>
+  <div class="center">Login</div>
+</ons-toolbar>
+
+<div class="content">
+  <span>
+    <br>
+  	<input class="text-input--material" placeholder="Username" type="text" required #usernameField>
+  	<br /><br />
+  	<input class="text-input--material" placeholder="Password" type="password" required #passwordField>
+  	<br><br>
+  </span>
+<button class="button button--large" (click)="this.login({'username': usernameField.value, 'password': passwordField.value})">Login</button>
+</div>

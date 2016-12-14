@@ -1,0 +1,12 @@
+<ons-toolbar>
+  	<a (click)="app.load('home')">
+	  <img class="logo" src="/logo.png" />
+	</a>
+</ons-toolbar>
+
+<div class="content">
+  <ons-list>
+	<ons-list-item (click)="app.load('login')">Login</ons-list-item>
+    <ons-list-item (click)="app.load('groups')">Contact Manager</ons-list-item>
+  </ons-list>
+</div>

@@ -1,0 +1,18 @@
+<ons-toolbar>
+  <div class="left">
+    <ons-back-button>Back</ons-back-button>
+  </div>
+  <div class="center">Contact Groups</div>
+</ons-toolbar>
+
+<div class="content">
+  <ons-list>
+    <ons-list-header>Contact Groups</ons-list-header>
+    <div *ngFor="let group of groups">
+      <ons-list-item (click)="this.app.load('contacts', {group_id: group.id})" modifier="chevron" tappable>
+        <div class="left">{{group.category_name}}</div>
+      	<div class="right"><span class="notification">{{group.contacts_count}}</span></div>
+      </ons-list-item>
+    </div>
+  </ons-list>
+</div>

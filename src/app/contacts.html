@@ -1,0 +1,16 @@
+ <ons-toolbar>
+  <div class="left">
+    <ons-back-button>Back</ons-back-button>
+  </div>
+  <div class="center">Contacts</div>
+</ons-toolbar>
+
+<div class="content">
+  <ons-list>
+    <div *ngFor="let contact of contacts">
+      <ons-list-item (click)="this.app.load('contact',{contact_id: contact.id})" modifier="chevron" tappable>
+    	<div class="left">{{contact.first_name}} {{contact.last_name}}</div>
+      </ons-list-item>
+    </div>
+  </ons-list>
+</div>

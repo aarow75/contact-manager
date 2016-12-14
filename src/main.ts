@@ -12,7 +12,11 @@ import {OnsenModule} from 'angular2-onsenui';
 import {MyApp} from './app/app';
 import {HomePage} from './app/home';
 import {MenuPage} from './app/menu';
-import {AboutPage} from './app/about';
+import {GroupsPage} from './app/groups';
+import {ContactsPage} from './app/contacts';
+import {ContactPage} from './app/contact';
+import {LoginPage} from './app/login';
+import {NotificationsPage} from './app/notifications';
 
 // Enable production mode when in production mode.
 if (process.env.NODE_ENV === 'production') {
@@ -29,12 +33,20 @@ if (process.env.NODE_ENV === 'production') {
         MyApp,
         HomePage,
         MenuPage,
-        AboutPage,
+        GroupsPage,
+        ContactsPage,
+        ContactPage,
+        LoginPage,
+        NotificationsPage,
     ],
     entryComponents: [
         HomePage,
         MenuPage,
-        AboutPage,
+        GroupsPage,
+        ContactsPage,
+        ContactPage,
+        LoginPage,
+        NotificationsPage,
     ],
     bootstrap: [
         MyApp,

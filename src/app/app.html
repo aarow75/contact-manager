@@ -1,7 +1,21 @@
-<ons-splitter>
-  <ons-splitter-side [page]="pages.menu" side="left" width="200px" collapse swipeable>
-  </ons-splitter-side>
-
-  <ons-splitter-content [page]="pages.home">
-  </ons-splitter-content>
-</ons-splitter>
+<ons-toolbar>
+	<div class="left">
+	  <ons-toolbar-button (click)="this.open()">
+	    <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+	  </ons-toolbar-button>
+	</div>
+	<div class="center">
+	  
+	</div>
+	<div class="right">
+	  <a (click)="this.load('notifications')"><i class="zmdi zmdi-notifications"></i></a>
+	  <a><i class="zmdi zmdi-shopping-cart"></i></a>
+	  <a><i class="zmdi zmdi-comment"></i></a>
+	</div>
+	</ons-toolbar>
+  <ons-splitter>
+    <ons-splitter-side [page]="pages.menu" id="menu" side="left" width="220px" collapse swipeable></ons-splitter-side>
+    <ons-splitter-content id="content">
+      <ons-navigator id="nav" [page]="pages.home"></ons-navigator>
+    </ons-splitter-content>
+  </ons-splitter>
